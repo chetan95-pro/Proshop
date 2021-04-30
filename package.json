@@ -1,6 +1,52 @@
 {
+  "name": "proshop",
+  "version": "1.0.0",
+  "description": "MERN Shopping cart app",
+  "main": "server.js",
+  "type": "module",
   "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "history": "^4.10.1",
+    "hoist-non-react-statics": "^3.3.2",
+    "isarray": "^0.0.1",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "mini-create-react-context": "^0.4.1",
+    "mongoose": "^5.12.6",
+    "object-assign": "^4.1.1",
+    "path-to-regexp": "^1.8.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-is": "^16.13.1",
+    "react-router": "^5.2.0",
     "react-router-bootstrap": "^0.25.0",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7",
+    "resolve-pathname": "^3.0.0",
+    "tiny-invariant": "^1.1.0",
+    "tiny-warning": "^1.0.3",
+    "value-equal": "^1.0.1"
+  },
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chetan95-pro/Proshop.git"
+  },
+  "author": "Chetan_Pro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chetan95-pro/Proshop/issues"
+  },
+  "homepage": "https://github.com/chetan95-pro/Proshop#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
   }
 }
